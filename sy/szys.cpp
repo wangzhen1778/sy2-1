@@ -42,14 +42,34 @@ void doExercise(int n)
 {
 	int score=0;		//练习得分，初始化为0
 	int i=0;			//练习题数的计数器
+		system("cls");
+	switch(n){
+		case 1:
+			printf("--加法练习--\n");
+			break;
+		case 2:
+			printf("--减法练习--\n");
+			break;
+		case 3:
+			printf("--乘法练习--\n");
+			break;
+		case 4:
+			printf("--除法练习--\n");
+			break;
+		case 5:
+			printf("--综合练习--\n");
+			break;
 
+	}
 	for(i=1;i<=10;i++)
 	{
 		score=score+test(n);		//间接递归调用test(n)
 	}
 	printf("本次练习十道题，你做对了%d道\n",score);
-
-
+	printf("回车返回菜单\n");
+	getchar();
+	getchar();
+	system("cls");
 }
 
 /*
