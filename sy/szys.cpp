@@ -42,12 +42,14 @@ void doExercise(int n)
 {
 	int score=0;		//练习得分，初始化为0
 	int i=0;			//练习题数的计数器
-	
+
 	for(i=1;i<=10;i++)
 	{
 		score=score+test(n);		//间接递归调用test(n)
 	}
 	printf("本次练习十道题，你做对了%d道\n",score);
+
+
 }
 
 /*
@@ -144,6 +146,7 @@ int test(int n)
 	else 
 	{
 		printf("做错了！\n");
+		printf("正确答案是%d\n",ranswer);
 		return 0;
 	}
 }
